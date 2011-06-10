@@ -4,7 +4,7 @@ Given /^I am not yet playing$/ do
 end
 
 When /^I start a game$/ do
-  pending # express the regexp above with the code you wish you had
+  Codebreaker::Game.new.start
 end
 
 Given /^the secret code is "([^"]*)"$/ do |arg1|
