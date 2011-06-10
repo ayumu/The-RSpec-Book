@@ -7,6 +7,10 @@ When /^I start a game$/ do
   Codebreaker::Game.new.start
 end
 
+Then /^I should see "([^"]*)"$/ do |message|
+  output.messages.should include message
+end
+
 Given /^the secret code is "([^"]*)"$/ do |arg1|
   pending # express the regexp above with the code you wish you had
 end
