@@ -18,7 +18,8 @@ Given /^I am not yet playing$/ do
 end
 
 When /^I start a game$/ do
-  Codebreaker::Game.new.start
+  game = Codebreaker::Game.new(output)
+  game = game.start
 end
 
 Then /^I should see "([^"]*)"$/ do |message|
