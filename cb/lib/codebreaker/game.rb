@@ -12,6 +12,7 @@ module Codebreaker
     end
 
     def guess(guess)
+      @output.puts ''
     end
   end
 end
