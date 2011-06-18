@@ -19,7 +19,7 @@ end
 
 When /^I start a game$/ do
   game = Codebreaker::Game.new(output)
-  game = game.start
+  game = game.start('1234')
 end
 
 Then /^I should see "([^"]*)"$/ do |message|
